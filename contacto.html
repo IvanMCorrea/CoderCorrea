@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="pokedex.html">Pokedex</a> </li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>           
+            <form action="varlidar.php" method="get" enctype="multipart/form-data">
+                 <!--utilizamos un div que contiene cada etiqueta label y cada etiqueta input-->
+                <div>
+                     <!--El atributo for del label debe tener el id del input eso hace que se relacionen-->
+                    <label for="nombre"> Nombre Completo </label>
+                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="30" required autofocus>
+                    
+                </div>
+               <div>
+                    <label for="mail">Mail</label>
+                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                </div>
+                <fieldset>
+                    <legend>Indique un Comentario</legend>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario" required></textarea>
+                    <br>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Adjunte archivo (opcional)</legend>
+                        <input type="file" name ="archivo" >
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <input type="button" value="Cancelar">
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Limpiar">
+                    </fieldset>
+                </div>
+            </form>
+            <br><br><br><br><br>
+        </div>
+    </main>
+    <footer>
+        Hecho por Ivan Correa
+    </footer>
+</body>
+</html>
