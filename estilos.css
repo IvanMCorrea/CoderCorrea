@@ -7,10 +7,17 @@ body{
    padding: 0;
    height: 100%;
    width: 100%;
+
+}
+
+.flex-evenly{
+   display: flex;
+   justify-content: space-evenly;
 }
 
 .background {
    background: linear-gradient(0deg, #accbee 0%, #e7f0fd 100%);
+   min-height: 100vh;
 }
 
 .center {
@@ -50,15 +57,6 @@ body{
    height: 100px;
    width: auto;
 }
-.menu {
-   display: inline-block;
-   width: 20%;
-   position:relative;
-   text-align: center;
-   background-color: white;
-   padding: 1%;
-   border-radius: 15px;
-}
 
 .img-size-100 {
    max-width: 100%;
@@ -69,71 +67,19 @@ a{
    text-decoration: none;
    color: #303030;
 }
-table{
-   border-spacing: 10px;
+
+.btn-background-poke{
+   color: #fff;
+   background-color: #3878a7;
+   border-color: #3878a7;
 }
-td { 
-   padding: 10px;
+.btn-background-poke:hover{
+   color: #F2BF00;
+}
+.color-hover{
+   color: #3878a7
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px){
-   .grid{
-      display: grid;
-      grid-template-areas: 
-      "header header header header"	
-      "main main main main"
-      "footer footer footer footer";
-      grid-template-columns: 25% 25% 25% 25%; 
-      grid-template-rows: auto auto auto; 
-   }
-   header{
-      grid-area: header;
-   }
-   main{
-      grid-area: main;
-   }
-   footer{
-      grid-area: footer;
-   }
-
-}
-@media only screen and (min-width: 768px) and (max-width:1200px) {
-   .grid{
-      display: grid;
-      grid-template-areas: 
-      "header header header header"	
-      "main main main main"
-      "footer footer footer footer";
-      grid-template-columns: 25% 25% 25% 25%; 
-      grid-template-rows: auto auto auto; 
-   }
-   header{
-      grid-area: header;
-   }
-   main{
-      grid-area: main;
-   }
-   footer{
-      grid-area: footer;
-   }
-}
-@media only screen and (min-width: 1200px) {
-   .grid{
-      display: grid;
-      grid-template-areas: 
-      "header header header header"	
-      "main main main main"
-      "footer footer footer footer";
-      grid-template-columns: 25% 25% 25% 25%; 
-      grid-template-rows: auto auto auto; 
-   }
-   header{
-      grid-area: header;
-   }
-   main{
-      grid-area: main;
-   }
-   footer{
-      grid-area: footer;
-   }
+.color-hover:hover{
+   color: #303030;
 }

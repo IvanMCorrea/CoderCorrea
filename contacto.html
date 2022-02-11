@@ -4,58 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon</title>
+    <link rel="shortcut icon" href="https://assets.pokemon.com/assets/cms2-es-xl/img/misc/gus/buttons/logo-pokemon-79x45.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a> </li>
-                <li><a href="pokedex.html">Pokedex</a> </li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>           
-            <form action="varlidar.php" method="get" enctype="multipart/form-data">
-                 <!--utilizamos un div que contiene cada etiqueta label y cada etiqueta input-->
-                <div>
-                     <!--El atributo for del label debe tener el id del input eso hace que se relacionen-->
-                    <label for="nombre"> Nombre Completo </label>
-                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="30" required autofocus>
-                    
+    <div class="background">
+        <!-- Menu -->
+        <div class="container-fluid bg-light ps-5 pe-5">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon Logo" class="size-s">
+                </a>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" aria-current="page" class="nav-link px-2 link-dark">Inicio</a></li>
+                    <li><a href="pokedex.html" class="nav-link px-2 link-dark">Pokedex</a></li>
+                    <li><a href="#" aria-current="page" class="nav-link px-2 link-secondary">Contacto</a></li>
+                </ul>
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-background-poke" onclick="window.location.href='file:///D:/CoderProg/login.html'">Ingresar</button>
+                    <button type="button" class="btn me-2 color-hover">Registrarse</button>
                 </div>
-               <div>
-                    <label for="mail">Mail</label>
-                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
-                </div>
-                <fieldset>
-                    <legend>Indique un Comentario</legend>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario" required></textarea>
-                    <br>
-                </fieldset>
-                <div>
-                    <fieldset>
-                        <legend>Adjunte archivo (opcional)</legend>
-                        <input type="file" name ="archivo" >
-                    </fieldset>
-                </div>
-
-                <div>
-                    <fieldset>
-                        <input type="button" value="Cancelar">
-                        <input id="enviar" type="submit" value="Enviar">
-                        <input id="reset" type="reset" value="Limpiar">
-                    </fieldset>
-                </div>
-            </form>
-            <br><br><br><br><br>
+            </header>
         </div>
-    </main>
-    <footer>
-        Hecho por Ivan Correa
-    </footer>
+        <main class="mt-5  ps-5 pe-5">
+            <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                        Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="save-info">
+                    <label class="form-check-label" for="save-info">Guardar información para futuros mensajes</label>
+                </div>
+                <hr class="my-4">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <hr class="my-4">
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+            </form>
+        </main>
+        <!-- Navegación Inferior/Footer -->
+        <footer class="py-3 my-4 bg-light">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Pokedex</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Contacto</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Hecho por Ivan Correa</p>
+        </footer>
+    </div>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
