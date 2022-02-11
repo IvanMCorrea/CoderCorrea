@@ -6,62 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
     <link rel="shortcut icon" href="https://assets.pokemon.com/assets/cms2-es-xl/img/misc/gus/buttons/logo-pokemon-79x45.png">
-    <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="grid background">
-        <header>
-            <nav>
-                <!-- Logo -->
-                <a href="index.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo Pokemon" class="size-s">
+    <div class="background">
+        <!-- Menu -->
+        <div class="container-fluid bg-light ps-5 pe-5">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon Logo" class="size-s">
                 </a>
-                <!-- Navegador Principal -->
-                <ul class="center" >
-                    <li class="menu"><a href="index.html">Inicio</a> </li>
-                    <li class="menu"><a href="pokedex.html">Pokedex</a> </li>
-                    <li class="menu"><a href="contacto.html">Contacto</a> </li>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" aria-current="page" class="nav-link px-2 link-secondary">Inicio</a></li>
+                    <li><a href="pokedex.html" class="nav-link px-2 link-dark">Pokedex</a></li>
+                    <li><a href="contacto.html" class="nav-link px-2 link-dark">Contacto</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <!-- Cards de Pokemones para elegir -->
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-background-poke" onclick="window.location.href='file:///D:/CoderProg/login.html'">Ingresar</button>
+                    <button type="button" class="btn me-2 color-hover">Registrarse</button>
+                </div>
+            </header>
+        </div>
+        <main class="mt-5">
             <h1 class="center AmarilloPokemon border-blue bold">Elige tu Pokemon!!</h1>
-            <table>
-                <caption class="text-white">Pokemones Iniciales</caption>
-                <!-- Fotos de los Pokemones -->
-                <tr class="center background-white">
-                    <td></td>
-                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="foto Charmander" class="img-size-100"></td>
-                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="foto Squirtle" class="img-size-100"></td>
-                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="foto Bulbasaur" class="img-size-100"> </td>
-                    <td><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="foto Pikachu" class="img-size-100"></td>
-                </tr>
-                <!-- Nombres de los Pokemones -->
-                <tr class="background-white">
-                    <td>Nombre</td>
-                    <td>Charmander</td>
-                    <td>Squirtle</td>
-                    <td>Bulbasaur</td>
-                    <td>Pikachu</td>
-                </tr>
-                <!-- Característica: Tipo de Pokemon -->
-                <tr class="background-white">
-                    <td>Tipo</td>
-                    <td>Fuego</td>
-                    <td>Agua</td>
-                    <td>Planta</td>
-                    <td>Eléctrico</td>
-                </tr>
-            </table>
-            <br>
+            <!-- Cards de Pokemones para elegir -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 p-5">
+                <div class="col">
+                    <div class="card h-100 border border-2 border-dark">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" class="card-img-top" alt="foto Charmander">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom">Charmander</h5>
+                            <p class="card-text">Tipo: Fuego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border border-2 border-dark">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" class="card-img-top" alt="foto Squirtle">
+                        <div class="card-body">
+                        <h5 class="card-title border-bottom">Squirtle</h5>
+                        <p class="card-text">Tipo: Agua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border border-2 border-dark">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top" alt="foto Bulbasaur">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom">Bulbasaur</h5>
+                            <p class="card-text">Tipo: Planta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border border-2 border-dark">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" class="card-img-top" alt="foto Pikachu">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom">Pikachu</h5>
+                            <p class="card-text">Tipo: Eléctrico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <br><br><br><br>
         </main>
         <!-- Navegación Inferior/Footer -->
-        <footer>
-            <h3>Hecho por Ivan Correa</h3>
+        <footer class="py-3 my-4 bg-light">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Pokedex</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Contacto</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Hecho por Ivan Correa</p>
         </footer>
     </div>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
