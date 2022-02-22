@@ -1,11 +1,8 @@
-* {
-  font-family: 'Roboto', arial, sans-serif; }
-
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%; }
+  min-height: 100%;
+  min-width: 100%; }
 
 /* Agrandar objeto */
 .zoom {
@@ -20,8 +17,11 @@ body {
 
 /* Bordes sombreados */
 .card-borders {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px; }
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 1.25rem; }
+
+.img-borders {
+  border-radius: 1.25rem; }
 
 .center {
   text-align: center; }
@@ -66,3 +66,6 @@ a {
   color: #3878a7; }
   .color-hover:hover {
     color: #303030; }
+
+* {
+  font-family: 'Roboto', arial, sans-serif; }
