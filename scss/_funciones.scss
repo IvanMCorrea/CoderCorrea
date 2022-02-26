@@ -1,0 +1,6 @@
+/*Bucle para usar los valores del mapa Tipo de Pokemones*/
+@each $tipo, $color in $tipo-pokemon {
+    .background--#{$tipo} {
+        background-color: $color;
+    }
+}

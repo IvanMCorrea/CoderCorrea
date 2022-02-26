@@ -1,0 +1,10 @@
+/*Mapa color cada tipo de pokemon*/
+$tipo-pokemon:(
+    fuego : red,
+    agua : blue,
+    planta : green,
+    electrico : yellow
+);
+@mixin bordes-redondeados {
+    border-radius: 1.25rem;
+}

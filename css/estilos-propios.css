@@ -1,3 +1,18 @@
+/* paleta de colores */
+/*Mapa color cada tipo de pokemon*/
+/*Bucle para usar los valores del mapa Tipo de Pokemones*/
+.background--fuego {
+  background-color: red; }
+
+.background--agua {
+  background-color: blue; }
+
+.background--planta {
+  background-color: green; }
+
+.background--electrico {
+  background-color: yellow; }
+
 body {
   margin: 0;
   padding: 0;
@@ -38,11 +53,6 @@ body {
 
 .border-blue {
   text-shadow: -2px -2px 1px #3C5494, 2px 2px 1px #3C5494, -2px 2px 1px #3C5494, 2px -2px 1px #3C5494; }
-
-.text-white {
-  color: #F2BF00;
-  font-size: 25px;
-  font-weight: bold; }
 
 .background-white {
   background-color: white; }

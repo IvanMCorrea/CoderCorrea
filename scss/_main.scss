@@ -4,6 +4,7 @@ body{
     min-height: 100%;
     min-width: 100%;
 }
+
  /* Agrandar objeto */
 .zoom {
     transition: transform .4s;
@@ -11,22 +12,26 @@ body{
         transform: scale(1.2);
     }
 }
+
  /* Color de fondo en gradiente */
 .background {
     background: linear-gradient(0deg, #accbee 0%, #e7f0fd 100%);
     min-height: 100vh;
 }
+
 /* Bordes sombreados */
 .card-border{
     box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 1.25rem;
+    @include bordes-redondeados;
 }
+
 .card-borders{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 1.25rem;
+    @include bordes-redondeados;
 }
+
 .img-borders{
-    border-radius: 1.25rem;
+    @include bordes-redondeados;
 }
 
 .center {
@@ -36,19 +41,14 @@ body{
 .bold{
     font-weight: bold;
 }
+
 .AmarilloPokemon {
-    color: $color-amarillo-poke ;
+    color: map-get($map: $paleta-colores, $key: "amarillo-poke");
 }
 
 .border-blue{
     text-shadow: -2px -2px 1px #3C5494, 2px 2px 1px #3C5494, -2px 2px 1px #3C5494, 2px -2px 1px #3C5494  ;
 }
-
-.text-white{
-    color: $color-amarillo-poke;
-    font-size: 25px;
-    font-weight: bold;
-} 
 
 .background-white {
     background-color: white;
@@ -58,26 +58,30 @@ body{
     height: 100px;
     width: auto;
 }
+
 .size-xs{
     height: 1.5rem;
     width: auto;
 }
+
 a{
     text-decoration: none;
-    color: $color-azul-poke;
+    color: map-get($map: $paleta-colores, $key: "azul-poke");
 }
 
 .btn-background-poke{
     color: #fff;
-    background-color: $color-azul-poke;
-    border-color: $color-azul-poke;
+    background-color: map-get($map: $paleta-colores, $key: "azul-poke");
+    border-color: map-get($map: $paleta-colores, $key: "azul-poke");
     &:hover{
-        color: $color-amarillo-poke;
+        color: map-get($map: $paleta-colores, $key: "amarillo-poke");
     }
 }
+
 .color-hover{
-    color: $color-azul-poke;
+    color: map-get($map: $paleta-colores, $key: "azul-poke");
     &:hover{
         color: #303030;
     }
 }
+
