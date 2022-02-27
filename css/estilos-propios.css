@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 /* paleta de colores */
 /*Mapa color cada tipo de pokemon*/
 /*Bucle para usar los valores del mapa Tipo de Pokemones*/
@@ -14,8 +18,6 @@
   background-color: yellow; }
 
 body {
-  margin: 0;
-  padding: 0;
   min-height: 100%;
   min-width: 100%; }
 
@@ -56,8 +58,14 @@ body {
   background-color: white; }
 
 .size-s {
-  height: 100px;
+  height: 3rem;
   width: auto; }
+  @media (min-width: 576px) {
+    .size-s {
+      height: 5rem; } }
+  @media (min-width: 992px) {
+    .size-s {
+      height: 6rem; } }
 
 .size-xs {
   height: 1.5rem;
