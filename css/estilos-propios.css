@@ -27,6 +27,11 @@ body {
   .zoom:hover {
     transform: scale(1.2); }
 
+.zoom-xs {
+  transition: transform .4s; }
+  .zoom-xs:hover {
+    transform: scale(1.05); }
+
 /* Color de fondo en gradiente */
 .background {
   background: linear-gradient(0deg, #accbee 0%, #e7f0fd 100%);
