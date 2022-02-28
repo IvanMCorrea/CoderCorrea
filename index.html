@@ -37,7 +37,7 @@
             </nav>
         </header>
         <!-- Main -->
-        <main class="mt-5">
+        <main class="mt-5 mb-5">
             <h1 class="center AmarilloPokemon border-blue bold">Elige tu Pokemon!!</h1>
             <!-- Cards de Pokemones para elegir -->
             <div class="container-fluid">
@@ -49,7 +49,6 @@
                             <div class="card-body">
                                 <h5 class="card-title border-bottom">Charmander</h5>
                                 <p class="card-text">Tipo: Fuego  <img src="img/Fuego.png" alt="" class="size-xs"></p>
-                                
                             </div>
                         </div>
                     </div>
@@ -85,7 +84,27 @@
                     </div>
                 </div>
             </div>
-            <br><br><br><br>
+            <!-- Pelear! -->
+            <div class="center mt-2 mb-5">
+                <button type="button" class="btn btn-background-poke btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Pelear!
+                </button>
+                <!-- Modal Pelear! -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Proximamente!!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lo sentimos! Todavía no esta disponible esta función.<br>
+                                Intentalo más adelante.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Navegación Inferior/Footer -->
         <footer class="py-3 bg-light mt-auto">
