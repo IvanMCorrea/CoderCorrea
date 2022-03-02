@@ -19,7 +19,7 @@ body{
 
  /* Color de fondo en gradiente */
 .background {
-    background: linear-gradient(0deg, #accbee 0%, #e7f0fd 100%);
+    background: whitesmoke;
     min-height: 100vh;
 }
 
@@ -48,11 +48,12 @@ body{
 
 .AmarilloPokemon {
     color: map-get($map: $paleta-colores, $key: "amarillo-poke");
+    font-family: 'Viga', sans-serif;
+    font-style: italic;
+    text-shadow: -0.13rem -0.13rem 0.06rem map-get($map: $paleta-colores, $key: "azul-poke"), 0.13rem 0.13rem 0.06rem #000, -0.13rem 0.13rem 0.06rem map-get($map: $paleta-colores, $key: "azul-poke"), 0.13rem -0.13rem 0.06rem map-get($map: $paleta-colores, $key: "azul-poke");
 }
 
-.border-blue{
-    text-shadow: -2px -2px 1px #3C5494, 2px 2px 1px #3C5494, -2px 2px 1px #3C5494, 2px -2px 1px #3C5494  ;
-}
+
 
 .background-white {
     background-color: white;

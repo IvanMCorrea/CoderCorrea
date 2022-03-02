@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -34,7 +35,7 @@ body {
 
 /* Color de fondo en gradiente */
 .background {
-  background: linear-gradient(0deg, #accbee 0%, #e7f0fd 100%);
+  background: whitesmoke;
   min-height: 100vh; }
 
 .img-borders, .card-border, .card-borders {
@@ -54,10 +55,10 @@ body {
   font-weight: bold; }
 
 .AmarilloPokemon {
-  color: #F2BF00; }
-
-.border-blue {
-  text-shadow: -2px -2px 1px #3C5494, 2px 2px 1px #3C5494, -2px 2px 1px #3C5494, 2px -2px 1px #3C5494; }
+  color: #ffcc03;
+  font-family: 'Viga', sans-serif;
+  font-style: italic;
+  text-shadow: -0.13rem -0.13rem 0.06rem #3878a7, 0.13rem 0.13rem 0.06rem #000, -0.13rem 0.13rem 0.06rem #3878a7, 0.13rem -0.13rem 0.06rem #3878a7; }
 
 .background-white {
   background-color: white; }
@@ -85,7 +86,7 @@ a {
   background-color: #3878a7;
   border-color: #3878a7; }
   .btn-background-poke:hover {
-    color: #F2BF00; }
+    color: #ffcc03; }
 
 .color-hover {
   color: #3878a7; }
