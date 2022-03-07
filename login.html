@@ -15,16 +15,22 @@
 <body>
     <div class="container-fluid d-flex justify-content-center background text-center align-items-center">
         <main class="form-signin">
-            <form action="index.html">
+            <form action="index.html" class="needs-validation" novalidate>
                 <img class="mb-4 size-s zoom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo">
                 <h1 class="h3 mb-4 bold AmarilloPokemon border-blue">Usuario</h1>
                 <div class="form-floating mb-4">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                     <label for="floatingInput">Email</label>
+                    <div class="invalid-feedback">
+                        Ingrese E-mail válido.
+                    </div>
                 </div>
                 <div class="form-floating mb-4">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                     <label for="floatingPassword">Contraseña</label>
+                    <div class="invalid-feedback">
+                        Ingrese Contraseña válida.
+                    </div>
                 </div>
                 <div class="checkbox mb-3">
                     <label>
@@ -36,5 +42,6 @@
             </form>
         </main>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
