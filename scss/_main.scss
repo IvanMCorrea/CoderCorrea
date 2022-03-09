@@ -53,8 +53,6 @@ body{
     text-shadow: -0.13rem -0.13rem 0.06rem map-get($map: $paleta-colores, $key: "azul-poke"), 0.13rem 0.13rem 0.06rem #000, -0.13rem 0.13rem 0.06rem map-get($map: $paleta-colores, $key: "azul-poke"), 0.13rem -0.13rem 0.06rem map-get($map: $paleta-colores, $key: "azul-poke");
 }
 
-
-
 .background-white {
     background-color: white;
 }
@@ -68,6 +66,11 @@ body{
     @media (min-width: 992px){
         height: 6rem;
     }
+}
+
+.size-icon{
+    height: 2rem;
+    width: auto;
 }
 
 .size-xs{

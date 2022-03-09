@@ -18,3 +18,7 @@
                 }, false)
             })
         })()
+// Condiciones ScrollReveal
+        ScrollReveal().reveal('.headline');
+        ScrollReveal().reveal('.tagline', { delay: 250 });
+        ScrollReveal().reveal('.punchline', { delay: 1000 });

@@ -73,6 +73,10 @@ body {
     .size-s {
       height: 6rem; } }
 
+.size-icon {
+  height: 2rem;
+  width: auto; }
+
 .size-xs {
   height: 1.5rem;
   width: auto; }
