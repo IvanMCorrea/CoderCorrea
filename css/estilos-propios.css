@@ -23,37 +23,41 @@ body {
   min-height: 100%;
   min-width: 100%; }
 
+a {
+  text-decoration: none;
+  color: #3878a7; }
+
 /* Agrandar objeto */
-.zoom {
+.Zoom {
   transition: transform .4s; }
-  .zoom:hover {
+  .Zoom:hover {
     transform: scale(1.2); }
 
-.zoom-xs {
+.ZoomXs {
   transition: transform .4s; }
-  .zoom-xs:hover {
+  .ZoomXs:hover {
     transform: scale(1.05); }
 
 /* Color de fondo en gradiente */
-.background {
+.Background {
   background: whitesmoke;
   min-height: 100vh; }
 
-.img-borders, .card-border, .card-borders {
+.ImgBorders, .CardBorder, .CardBorderPokedex {
   border-radius: 1.25rem; }
 
 /* Bordes sombreados */
-.card-border {
+.CardBorder {
   box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25); }
 
-.card-borders {
+.CardBorderPokedex {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
-.center {
-  text-align: center; }
+.Center {
+  text-align: Center; }
 
-.bold {
-  font-weight: bold; }
+.Bold {
+  font-weight: Bold; }
 
 .AmarilloPokemon {
   color: #ffcc03;
@@ -61,49 +65,38 @@ body {
   font-style: italic;
   text-shadow: -0.13rem -0.13rem 0.06rem #3878a7, 0.13rem 0.13rem 0.06rem #000, -0.13rem 0.13rem 0.06rem #3878a7, 0.13rem -0.13rem 0.06rem #3878a7; }
 
-.background-white {
-  background-color: white; }
-
-.size-s {
+.SizeS {
   height: 3rem;
   width: auto; }
   @media (min-width: 576px) {
-    .size-s {
+    .SizeS {
       height: 5rem; } }
   @media (min-width: 992px) {
-    .size-s {
+    .SizeS {
       height: 6rem; } }
 
-.size-icon {
+.SizeIcon {
   height: 2rem;
   width: auto; }
 
-.size-xs {
+.SizeXs {
   height: 1.5rem;
   width: auto; }
 
-a {
-  text-decoration: none;
-  color: #3878a7; }
-
-.btn-background-poke {
+.BtnBackgroundPoke {
   color: #3878a7;
   background-color: #ffcc03;
   border-color: #ffcc03;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
   border-radius: 1rem;
-  font-weight: bold; }
-  .btn-background-poke:hover {
+  font-weight: Bold; }
+  .BtnBackgroundPoke:hover {
     color: #fff; }
 
-.color-hover {
+.LinkAzulPoke {
   color: #3878a7; }
-  .color-hover:hover {
+  .LinkAzulPoke:hover {
     color: #303030; }
-
-.max {
-  max-width: 100%;
-  max-height: 100%; }
 
 .BackgroundImageError {
   min-height: 100vh;
@@ -111,7 +104,7 @@ a {
   background-image: url(../img/404_I8.svg);
   /* Para dejar la imagen de fondo centrada, vertical y
     horizontalmente */
-  background-position: center center;
+  background-position: Center Center;
   /* Para que la imagen de fondo no se repita */
   background-repeat: no-repeat;
   /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
