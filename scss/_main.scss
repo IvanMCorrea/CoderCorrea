@@ -84,11 +84,14 @@ a{
 }
 
 .btn-background-poke{
-    color: #fff;
-    background-color: map-get($map: $paleta-colores, $key: "azul-poke");
-    border-color: map-get($map: $paleta-colores, $key: "azul-poke");
+    color: map-get($map: $paleta-colores, $key: "azul-poke");
+    background-color: map-get($map: $paleta-colores, $key: "amarillo-poke");
+    border-color: map-get($map: $paleta-colores, $key: "amarillo-poke");
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
+    border-radius: 1rem;
+    font-weight: bold;
     &:hover{
-        color: map-get($map: $paleta-colores, $key: "amarillo-poke");
+        color: #fff;
     }
 }
 
@@ -96,5 +99,34 @@ a{
     color: map-get($map: $paleta-colores, $key: "azul-poke");
     &:hover{
         color: #303030;
+    }
+}
+
+.max{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.BackgroundImageError{
+    min-height: 100vh;
+    /* Ubicación de la imagen */
+    background-image: url(../img/404_I8.svg);
+    /* Para dejar la imagen de fondo centrada, vertical y
+    horizontalmente */
+    background-position: center center;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    de fondo o si hay problemas para cargarla */
+    background-color: whitesmoke;
+    @media only screen and (min-width: 950px){
+        background-image: url(../img/404_1920x1080.svg);
+    }
+    @media only screen and (min-width: 1920px){
+        background-image: url(../img/404_Error.svg);
     }
 }
