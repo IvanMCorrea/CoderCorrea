@@ -43,6 +43,38 @@ a {
   background: whitesmoke;
   min-height: 100vh; }
 
+/* 100% VH */
+.FullVH {
+  min-height: 100vh;
+  min-width: 100vh; }
+
+.ContainerLogin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ContainerLogin:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(../img/Background-Registro.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1; }
+
+.BackgroundLogin {
+  background: url(../img/pokemon_vmuz.jpg) no-repeat;
+  background-size: cover;
+  width: 75%; }
+  @media (min-width: 768px) {
+    .BackgroundLogin {
+      width: 50%; } }
+
 .ImgBorders, .CardBorder, .CardBorderPokedex {
   border-radius: 1.25rem; }
 

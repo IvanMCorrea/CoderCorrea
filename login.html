@@ -13,60 +13,63 @@
     <meta name="keywords"  content="Pokemon, Login">
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-center Background text-center align-items-center">
-        <main class="form-signin">
-            <form action="index.html" class="needs-validation" novalidate>
-                <img class="mb-4 SizeS Zoom" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo">
-                <h1 class="h3 mb-4 Bold AmarilloPokemon border-blue">Usuario</h1>
-                <div class="form-floating mb-4">
+    <div class="FullVH">
+        <main class="ContainerLogin FullVH">
+            <form action="index.html" class="needs-validation BackgroundLogin text-center m-5 p-5 ImgBorders" novalidate>
+                <img class="mb-4 SizeS Zoom" src="img/International_Pokémon_logo.svg" alt="Logo">
+                <h1 class="h1 mb-4 Bold AmarilloPokemon border-blue">Usuario</h1>
+                <div class="form-floating mb-4 mt-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                     <label for="floatingInput">Email</label>
-                    <div class="invalid-feedback">
+                    <div class="invalid-tooltip">
                         Ingrese E-mail válido
                     </div>
                 </div>
-                <div class="form-floating mb-4">
+                <div class="form-floating mb-4 mt-5">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                     <label for="floatingPassword">Contraseña</label>
-                    <div class="invalid-feedback">
+                    <div class="invalid-tooltip">
                         Ingrese Contraseña válida
                     </div>
                 </div>
-                <div class="checkbox mb-3">
-                    <label>
+                <div class="checkbox mb-3 mt-5">
+                    <label class="AmarilloPokemon">
                         <input type="checkbox" value="remember-me"> Recordarme
                     </label>
                 </div>
                 <button class="w-100 btn btn-lg BtnBackgroundPoke" type="submit">Ingresar</button>
+                <div class=" mt-4">
+                    <a href="registrarse.html" class="h6 Bold AmarilloPokemon border-blue">Crear cuenta Nueva</a>
+                </div>
             </form>
         </main>
+        <!-- Navegación Inferior/Footer -->
+        <footer class="py-3 bg-light mt-auto shadow">
+            <!-- Links internos -->
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pokedex.html" class="nav-link px-2 text-muted">Pokedex</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
+                </li>
+            </ul>
+            <!-- Redes Sociales -->
+            <ul class="nav justify-content-center pb-2">
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/PokemonOficialLatAm" class="nav-link" target="blank"><img src="img/facebook.svg" alt="Facebook" class="SizeIcon Zoom"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/pokemon/?hl=es-la" class="nav-link" target="blank"><img src="img/instagram.svg" alt="Instagram" class="Zoom SizeIcon"></a>
+                </li>
+            </ul>
+            <!-- Derechos -->
+            <p class="text-center text-muted">© 2022 Hecho por Ivan Correa</p>
+        </footer>
     </div>
-    <!-- Navegación Inferior/Footer -->
-    <footer class="py-3 bg-light mt-auto shadow">
-        <!-- Links internos -->
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a href="pokedex.html" class="nav-link px-2 text-muted">Pokedex</a>
-            </li>
-            <li class="nav-item">
-                <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
-            </li>
-        </ul>
-        <!-- Redes Sociales -->
-        <ul class="nav justify-content-center pb-2">
-            <li class="nav-item">
-                <a href="https://www.facebook.com/PokemonOficialLatAm" class="nav-link" target="blank"><img src="img/facebook.svg" alt="Facebook" class="SizeIcon Zoom"></a>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.instagram.com/pokemon/?hl=es-la" class="nav-link" target="blank"><img src="img/instagram.svg" alt="Instagram" class="Zoom SizeIcon"></a>
-            </li>
-        </ul>
-        <!-- Derechos -->
-        <p class="text-center text-muted">© 2022 Hecho por Ivan Correa</p>
-    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
