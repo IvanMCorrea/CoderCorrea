@@ -62,10 +62,13 @@ a {
     height: 100%;
     left: 0;
     top: 0;
-    background: url(../img/Background-Registro.jpg) no-repeat center;
+    background: url(../img/BackgroundRegistroMobile.png) no-repeat center;
     background-size: cover;
     filter: blur(4px);
     z-index: -1; }
+    @media (min-width: 576px) {
+      .ContainerLogin:after {
+        background: url(../img/Background-Registro.jpg); } }
 
 .BackgroundLogin {
   background: url(../img/pokemon_vmuz.jpg) no-repeat;
