@@ -52,11 +52,13 @@ a{
         background-size: cover;
         filter: blur(4px);
         z-index: -1;
-        @media (min-width: 576px){
+        @media (min-width: 576px) and (max-width: 999px){
             background: url(../img/Background-Registro.jpg) no-repeat center;
+            background-size: cover;
         }
         @media (min-width: 1000px){
             background: url(../img/Background-Registro-XL.jpg) no-repeat center;
+            background-size: cover;
         }
     }
 }
