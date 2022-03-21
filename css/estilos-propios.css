@@ -44,9 +44,9 @@ a {
   min-height: 100vh; }
 
 /* 100% VH */
-.FullVH {
+.FullVP {
   min-height: 100vh;
-  min-width: 100vh; }
+  min-width: 100vw; }
 
 .ContainerLogin {
   position: relative;
